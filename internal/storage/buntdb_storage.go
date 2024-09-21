@@ -13,6 +13,8 @@ type BuntDBStorage struct {
 	db *buntdb.DB
 }
 
+var _ Storage = (*BuntDBStorage)(nil)
+
 func NewBuntDBStorage(path string) (*BuntDBStorage, error) {
 	db, err := buntdb.Open(path)
 	if err != nil {

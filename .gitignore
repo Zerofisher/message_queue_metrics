@@ -29,3 +29,5 @@ localdev/
 
 .vscode/settings.json
 .zed/
+metrics.db
+message_queue_metrics
